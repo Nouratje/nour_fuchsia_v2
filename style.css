@@ -1,0 +1,270 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffcc;
+    font-family: 'Georgia', serif;
+}
+
+.top-menu {
+    width: 100%;
+    background-color: #6F9368;
+    border-bottom: 0.1em solid #ccc;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.logo {
+    position: absolute;
+    left: 2vw;
+}
+
+
+.logo img {
+    height: 4em;
+    width: auto;
+}
+
+@keyframes heartbeat{
+    0% {transform: scale(1);}
+    25%{transform: scale(1.1);}
+    50%{transform: scale(1);}
+    75%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+
+.logo img {
+    height: 4em;
+    width: auto;
+    animation: heartbeat 1.5s infinite;
+}
+
+.top-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu ul li a {
+    text-decoration: none;
+    color: #6b0707;
+    font-size: 1.4em;
+}
+
+
+.top-menu ul li a:hover {
+    color: #ffffff;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;            
+}
+/* Happy Health CSS van ChatGPT */
+.happy-health {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    max-width: 45%;
+} 
+
+.large-letter {
+    font-size: 14em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.text {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0;
+    align-self: flex-start;
+}
+
+p {
+    font-size: 1.4em;
+    width: 80%;
+    margin: 2em auto;
+    line-height: 1.6;
+    color: #333;
+}
+
+section {
+    margin-top: 2em;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #6F9368;
+    color: #ffffcc;
+    padding: 2em 5vw;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+footer section {
+    max-width: 30%;
+    flex: 1;
+    margin: 1em 0;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #6b0707;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li, footer p {
+    margin: 0.5em 0;
+}
+
+footer a {
+    color: #F9EFBA;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+.episode-page {
+    font-family: al, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding-top: 5em;
+}
+
+.episodes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em; 
+    align-items: center;
+    padding: 2em 5vw; 
+}
+
+.episode {
+    display: flex;
+    align-items: flex-start;
+    background-color: #6F9368;
+    gap: 1em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.5em;
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.1);
+    max-width: 60vw; 
+}
+
+.episode img {
+    width: 8em;
+    height: 8em;
+    border-radius: 0.5em;
+    gap:1em;
+    object-fit: cover;
+}
+
+.content {
+    flex: 1;
+}
+
+.content h3 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.content p {
+    margin: 0 0 1em 0;
+    font-size: 1em;
+    color: #000;
+    line-height: 1.6;
+}
+
+.play-button {
+    padding: 0.5em 1em;
+    background-color: #ca2f2f;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.play-button:hover {
+    background-color: #ac0000;
+}
+
+#aboutus {
+    font-family: Arial, sans-serif;
+    background-color: #ffffcc;
+    padding: 2em 5vw;
+    text-align: center;
+}
+
+#aboutus h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#aboutus section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+#aboutus article {
+    background-color: #6F9368;
+    padding: 2em;
+    border: 0.1em solid #6F9368;
+    border-radius: 0.5em;
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.1);
+    max-width: 20em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#aboutus article img {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#aboutus article h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#aboutus article p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
